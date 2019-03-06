@@ -45,7 +45,7 @@ An example for a 45-minute workshop:
 |------------------------------|------|
 | tximeta: importing RNA-seq   | 10m  |
 | importing peaks              | 10m  |
-| plyrange introduction        | 10m  |
+| plyranges introduction       | 10m  |
 | intersecting peaks and genes | 15m  |
 
 # Workshop goals and objectives
