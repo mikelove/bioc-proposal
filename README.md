@@ -2,9 +2,9 @@
 
 # Instructor(s) name(s) and contact information
 
-Michael Love (michaelisaiahlove at gmail dot com)
-Michael Lawrence (lawrence.michael at gene dot com)
-Stuart Lee (co-author)
+- Michael Love (michaelisaiahlove at gmail dot com)
+- Michael Lawrence (lawrence.michael at gene dot com)
+- Stuart Lee (co-author)
 
 # Workshop Description
 
@@ -31,11 +31,11 @@ questions or providing feedback throughout.
 
 ## _R_ / _Bioconductor_ packages used
 
-* plyranges
-* tximeta
-* SummarizedExperiment
-* DESeq2
-* limma
+- plyranges
+- tximeta
+- SummarizedExperiment
+- DESeq2
+- limma
 
 ## Time outline
 
@@ -52,13 +52,13 @@ An example for a 45-minute workshop:
 
 ## Learning goals
 
-* understand how to formulate genomic analyses using plyranges "verbs"
-* describe how Bioconductor facilitates reproducible workflows 
+- understand how to formulate genomic analyses using plyranges "verbs"
+- describe how Bioconductor facilitates reproducible workflows 
   for genomic data anlaysis
 
 ## Learning objectives
 
-* import RNA-seq data including genomic ranges
-* manipulate a SummarizedExperiment
-* overlap ChIP- or ATAC-seq peaks and gene expression with plyranges
-* produce enrichment plots
+- import RNA-seq data including genomic ranges
+- manipulate a SummarizedExperiment
+- overlap ChIP- or ATAC-seq peaks and gene expression with plyranges
+- produce enrichment plots
