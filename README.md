@@ -1,73 +1,64 @@
-# RNA-seq data analysis with DESeq2
+# Fluent genomic data analyses with plyranges and tximeta
 
 # Instructor(s) name(s) and contact information
 
-Michael Love - michaelisaiahlove at gmail
+Michael Love (michaelisaiahlove at gmail dot com)
+Michael Lawrence (lawrence.michael at gene dot com)
+Stuart Lee (co-author)
 
 # Workshop Description
 
-In this workshop, we will give a quick overview of the most useful
-functions in the DESeq2 package, and a basic RNA-seq analysis. We will
-cover: how to quantify transcript expression from FASTQ files using
-Salmon, import quantification from Salmon with tximport and tximeta,
-generate plots for quality control and exploratory data analysis EDA
-(also using MultiQC), perform differential expression (DE) (also using
-apeglm), overlap with other experimental data (using AnnotationHub),
-and build reports (using ReportingTools and Glimma). We will give a
-short example of integration of DESeq2 with the zinbwave package for
-single-cell RNA-seq differential expression. The workshop is designed
-to be a lab with plenty of time for questions throughout the lab.
+In this workshop, we will explore data from one or two experiments, 
+where we are interested in intersecting epigenetic data (ChIP-seq or 
+ATAC-seq peaks) with transcriptomic data (RNA-seq gene or transcript 
+expression). We will demonstrate how to read in RNA-seq data in such 
+a way that correct genomic ranges are automatically added to a rich 
+Bioconductor data object. We will then show how to use the plyranges 
+package, which provides "verbs" for genomic range manipulation and 
+computation in a similar manner to the dplyr package for data frames.
+
+We plan the workshop to be an instructor-led live demo with time
+for questions and interactions with the participants.
 
 ## Pre-requisites
 
 * Basic knowledge of R syntax
 
-Non-essential background reading:
-
-* DESeq2 paper: <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4302049/>
-* tximport paper: <https://f1000research.com/articles/4-1521/v2>
-* apeglm paper: <https://www.biorxiv.org/content/early/2018/04/17/303255>
-
 ## Workshop Participation
 
-Students will participate by following along an Rmarkdown document,
-and asking questions throughout the workshop.
+Students will participate by following along a live demo, and asking
+questions or providing feedback throughout.
 
 ## _R_ / _Bioconductor_ packages used
 
+* plyranges
+* tximeta
+* SummarizedExperiment
 * DESeq2
-* tximport
-* apeglm
-* AnnotationHub
-* ReportingTools
-* Glimma
-* zinbwave
+* limma
 
 ## Time outline
 
-| Activity                      | Time |
-|-------------------------------|------|
-| Overview of packages          | 20m  |
-| Quantification and import     | 20m  |
-| EDA and DE                    | 20m  |
-| Downstream analysis & reports | 20m  |
-| ZINB-WaVE integration         | 20m  |
-| Additional questions          | 20m  |
+An example for a 45-minute workshop:
+
+| Activity                     | Time |
+|------------------------------|------|
+| tximeta: importing RNA-seq   | 10m  |
+| importing peaks              | 10m  |
+| plyrange introduction        | 10m  |
+| intersecting peaks and genes | 15m  |
 
 # Workshop goals and objectives
 
-Learning goals
+## Learning goals
 
-* Visually assess quality of RNA-seq data 
-* Perform basic differential analysis of RNA-seq data 
-* Compare RNA-seq results with other experimental data
+* understand how to formulate genomic analyses using plyranges "verbs"
+* describe how Bioconductor facilitates reproducible workflows 
+  for genomic data anlaysis
 
-Learning objectives
+## Learning objectives
 
-* Quantify transcript expression from FASTQ files
-* Import quantification into R/Bioconductor
-* Perform quality control and exploratory data analysis
-* Perform differential expression
-* Overlap with other experimental data
-* Build dynamic reports
-* Integrate DESeq2 and zinbwave for single-cell RNA-seq data
+* import RNA-seq data including genomic ranges
+* manipulate a SummarizedExperiment
+* overlap ChIP- or ATAC-seq peaks and gene expression with plyranges
+* produce enrichment plots
