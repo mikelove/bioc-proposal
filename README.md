@@ -3,8 +3,8 @@
 # Instructor(s) name(s) and contact information
 
 - Michael Love (michaelisaiahlove at gmail dot com)
+- Stuart Lee (lee.s at wehi dot edu dot au)
 - Michael Lawrence (lawrence.michael at gene dot com)
-- Stuart Lee (co-author)
 
 # Workshop Description
 
