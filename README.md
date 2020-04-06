@@ -1,21 +1,18 @@
-# Fluent genomic data analyses with plyranges and tximeta
+# Quantification of droplet scRNA-seq and import into Bioconductor with alevin and tximeta
 
 # Instructor(s) name(s) and contact information
 
 - Michael Love (michaelisaiahlove at gmail dot com)
-- Stuart Lee (lee.s at wehi dot edu dot au)
-- Michael Lawrence (lawrence.michael at gene dot com)
 
 # Workshop Description
 
-In this workshop, we will explore data from one or two experiments, 
-where we are interested in intersecting epigenetic data (ChIP-seq or 
-ATAC-seq peaks) with transcriptomic data (RNA-seq gene or transcript 
-expression). We will demonstrate how to read in RNA-seq data in such 
-a way that correct genomic ranges are automatically added to a rich 
-Bioconductor data object. We will then show how to use the plyranges 
-package, which provides "verbs" for genomic range manipulation and 
-computation in a similar manner to the dplyr package for data frames.
+In this workshop, we will demonstrate basics of quantification of
+droplet-based scRNA-seq reads, producing a count matrix for import
+into Bioconductor using tximport/tximeta, in the end producing a
+*SingleCellExperiment* object. We will also demonstrate
+the ability of alevin to provide quantification uncertainty on the 
+count matrix, and suggestions for how this information can be used 
+in downstream analyses.
 
 We plan the workshop to be an instructor-led live demo with time
 for questions and interactions with the participants.
@@ -31,11 +28,10 @@ questions or providing feedback throughout.
 
 ## _R_ / _Bioconductor_ packages used
 
-- plyranges
+- tximport
 - tximeta
 - SummarizedExperiment
-- DESeq2
-- limma
+- SingleCellExperiment
 
 ## Time outline
 
@@ -43,22 +39,25 @@ An example for a 45-minute workshop:
 
 | Activity                     | Time |
 |------------------------------|------|
-| tximeta: importing RNA-seq   | 10m  |
-| importing peaks              | 10m  |
-| plyranges introduction       | 10m  |
-| intersecting peaks and genes | 15m  |
+| alevin for droplet scRNA-seq | 15m  |
+| importing counts into Bioc   | 10m  |
+| examination of counts data   | 10m  |
+| examination of uncertainty   | 10m  |
 
 # Workshop goals and objectives
 
 ## Learning goals
 
-- understand how to formulate genomic analyses using plyranges "verbs"
-- describe how Bioconductor facilitates reproducible workflows 
-  for genomic data anlaysis
+- understand how scRNA-seq quantification methods work and 
+  understanding their limits
+- describe how Bioconductor's classes including
+  *SingleCellExperiment* facilitate reproducibility through 
+  tracking metadata on the samples/cells and the genomic ranges
 
 ## Learning objectives
 
-- import RNA-seq data including genomic ranges
-- manipulate a SummarizedExperiment
-- overlap ChIP- or ATAC-seq peaks and gene expression with plyranges
-- produce enrichment plots
+- run alevin, quantifying scRNA-seq reads to make a gene count matrix
+- import scRNA-seq count data including genomic ranges
+- manipulate a SingleCellExperiment
+- examine distributions of scRNA-seq counts
+- examine uncertainty estimates for counts
