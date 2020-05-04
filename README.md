@@ -16,11 +16,16 @@ count matrix, and suggestions for how this information can be used
 in downstream analyses.
 
 We plan the workshop to be an instructor-led live demo with time
-for questions and interactions with the participants.
+for questions and interactions with the participants. We imagine that
+the target participant for the workshop probably has some dscRNA-seq 
+data, and knows about e.g. generating a count matrix with *CellRanger*.
+We will show an alternative quantification pipeline and explain its
+benefits.
 
 ## Pre-requisites
 
 * Basic knowledge of R syntax
+* General understanding of scRNA-seq experiment
 
 ## Workshop Participation
 
@@ -57,9 +62,10 @@ An example for a 45-minute workshop:
 
 ## Learning objectives
 
-- run alevin, quantifying scRNA-seq reads to make a gene count matrix
+- see code to run alevin, quantifying scRNA-seq reads to make a gene count matrix
 - import scRNA-seq count data including genomic ranges
-- import scRNA-seq from EMBL based on experiment id
 - manipulate a SingleCellExperiment
-- examine distributions of scRNA-seq counts
+- examine scRNA-seq counts over cell labels
 - examine uncertainty estimates for counts
+- hand-off to Seurat workflow
+- hand-off to scran workflow
