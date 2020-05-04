@@ -40,8 +40,8 @@ An example for a 45-minute workshop:
 
 | Activity                     | Time |
 |------------------------------|------|
-| alevin for droplet scRNA-seq | 15m  |
-| importing counts into Bioc   | 10m  |
+| alevin for droplet scRNA-seq | 20m  |
+| importing counts into Bioc   |  5m  |
 | examination of counts data   | 10m  |
 | examination of uncertainty   | 10m  |
 
