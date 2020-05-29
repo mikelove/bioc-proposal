@@ -1,26 +1,30 @@
-# Quantification of droplet scRNA-seq and import into Bioconductor with alevin and tximeta
+# Importing alevin scRNA-seq counts into R/Bioconductor
 
 # Instructor(s) name(s) and contact information
 
 - Michael Love (michaelisaiahlove at gmail dot com)
 - Avi Srivastava (asrivastava at nygenome dot org)
 
+# Workshop Package:
+
+<https://github.com/mikelove/alevin2bioc>
+
 # Workshop Description
 
 In this workshop, we will demonstrate basics of quantification of
 droplet-based scRNA-seq reads using alevin, producing a count matrix 
-for import into Bioconductor using tximport/tximeta, in the end 
+for import into Bioconductor using tximeta, in the end 
 producing a *SingleCellExperiment* object. We will also demonstrate
 the ability of alevin to provide quantification uncertainty on the 
-count matrix, and suggestions for how this information can be used 
-in downstream analyses.
+count matrix, and visualize this uncertainty across cells.
 
 We plan the workshop to be an instructor-led live demo with time
 for questions and interactions with the participants. We imagine that
 the target participant for the workshop probably has some dscRNA-seq 
 data, and knows about e.g. generating a count matrix with *CellRanger*.
 We will show an alternative quantification pipeline and explain its
-benefits.
+benefits. We will show hand off of the data to OSCA (Bioconductor's
+online book) as well as to Seurat.
 
 ## Pre-requisites
 
@@ -34,10 +38,11 @@ questions or providing feedback throughout.
 
 ## _R_ / _Bioconductor_ packages used
 
-- tximport
 - tximeta
-- SummarizedExperiment
 - SingleCellExperiment
+- fishpond
+- scran
+- Seurat
 
 ## Time outline
 
@@ -68,4 +73,4 @@ An example for a 45-minute workshop:
 - examine scRNA-seq counts over cell labels
 - examine uncertainty estimates for counts
 - hand-off to Seurat workflow
-- hand-off to scran workflow
+- hand-off to OSCA workflows
